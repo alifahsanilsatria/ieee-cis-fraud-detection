@@ -1,0 +1,49 @@
+1. Pre-calucated features are not only based on entity provided 
+   in this dataset, but also based on other entity not included.
+
+2. There are many entity features (like full 16-digits card number, 
+   full billing name/address, full email_address, phone number, account number,
+   device hashing, etc) we could not provide in the dataset (The reason has been 
+   answered in other questions and threads). But they're quite useful so we engineering 
+   features (Cx, Dx, Mx, Vx) for you to use in modeling.
+
+3. If you're interested in only raw features, you can only use card/addr/emaildomain/identity 
+   features and ignore those engineered features.
+
+Included Categorical Features:
+1. ProductCD
+2. card3 (2 terbanyak)
+3. card4
+4. card5 (5 terbanyak)
+5. card6
+6. DeviceType
+7. DeviceInfo (4 terbanyak)
+8. id_12, id_13 (4 terbanyak), id_14 (4 terbanyak),
+   id_15, id_16, id_17 (2 terbanyak), id_18 (3 terbanyak),
+   id_21 (1 terbanyak), id_22 (2 terbanyak), id_23, id_24 (2 terbanyak),
+   id_25 (1 terbanyak), id_27, id_28, id_29, id_32, id_34, id_35, id_36,
+   id_37, id_38
+9. addr2 (1 terbanyak)
+10. P_emaildomain (4 terbanyak)
+11. R_emaildomain (4 terbanyak)
+12. TransactionID, addr1, id_26, id_30, dan id_33 (ada dan ga ada)
+
+Included Numerical Features:
+1. TransactionAmt -> normalisasi
+2. dist2 -> convert ke categorical features (mode, non-mode dan ada, ga ada)
+3. id_01 -> convert ke categorical features (mode, non-mode dan ada, ga ada)
+4. id_02 -> imputation pake knn, lalu hasilnya dinormalisasi
+5. id_03 -> convert ke categorical features (mode, non-mode dan ada, ga ada)
+6. id_04 -> convert ke categorical features (mode, non-mode dan ada, ga ada)
+7. id_05 -> convert ke categorical features (mode, non-mode dan ada, ga ada)
+8. id_06 -> convert ke categorical features (mode, non-mode dan ada, ga ada)
+9. id_07 -> convert ke categorical features (ada dan ga ada)
+10. id_08 -> convert ke categorical features (ada dan ga ada)
+11. id_09 -> convert ke categorical features (mode, non-mode dan ada, ga ada)
+12. id_10 -> convert ke categorical features (mode, non-mode dan ada, ga ada)
+13. id_11 -> convert ke categorical features (mode, non-mode dan ada, ga ada)
+
+Type 1 : Normalisasi
+Type 2 : convert ke categorical features (mode, non-mode dan ada, ga ada)
+Type 3 : convert ke categorical features (ada dan ga ada)
+Type 4 : imputation pake knn, lalu hasilnya dinormalisasi
