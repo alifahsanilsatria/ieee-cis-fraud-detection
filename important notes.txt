@@ -42,8 +42,9 @@ Included Numerical Features:
 11. id_09 -> convert ke categorical features (mode, non-mode dan ada, ga ada)
 12. id_10 -> convert ke categorical features (mode, non-mode dan ada, ga ada)
 13. id_11 -> convert ke categorical features (mode, non-mode dan ada, ga ada)
+14. TransactionDT -> convert ke jam (0-23)
 
 Type 1 : Normalisasi
 Type 2 : convert ke categorical features (mode, non-mode dan ada, ga ada)
 Type 3 : convert ke categorical features (ada dan ga ada)
-Type 4 : imputation pake knn, lalu hasilnya dinormalisasi
+Type 4 : imputation pake random forest, lalu hasilnya dinormalisasi
