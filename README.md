@@ -11,3 +11,5 @@ This competition using AUC-ROC as evaluation metrics (tentative):
 
 Raw Features : Card, ProductCD, DeviceType, DeviceInfo, P_emaildomain, R_emaildomain, addr1, addr2, id_, TransactionAmt, dist, TransactionDT
 Engineered Features : Cx, Dx, Mx, Vx
+
+Important Notes contains what to be done with raw features
