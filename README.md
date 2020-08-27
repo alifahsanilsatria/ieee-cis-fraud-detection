@@ -9,7 +9,7 @@ This competition using AUC-ROC as evaluation metrics (tentative):
 3. submission raw + engineered features + initial hyperparameter (xgboost) --> 0.847249
 4. submission raw + engineered feature + hyperparameter tuning for max_depth, min_child_weight, and gamma (xgboost) --> 0.851137
 
-Raw Features : Card, ProductCD, DeviceType, DeviceInfo, P_emaildomain, R_emaildomain, addr1, addr2, id_, TransactionAmt, dist, TransactionDT
+Raw Features : Card, ProductCD, DeviceType, DeviceInfo, P_emaildomain, R_emaildomain, addr1, addr2, id_, TransactionAmt, dist, TransactionDT<br>
 Engineered Features : Cx, Dx, Mx, Vx
 
 Important Notes contains what to be done with raw features
